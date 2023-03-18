@@ -1,0 +1,126 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Lab test</title>
+        <style>
+        *{
+            box-sizing: border-box;
+        }
+        img {
+             display: block;
+             margin-left: auto;
+             margin-right: 100;
+            }
+
+        details{
+            display: inline-block;
+            margin-left: 100%;
+            margin-right: auto;
+
+        }
+        form{
+            text-align: left;
+            text-justify: distribute;
+            }
+
+        #side{
+             position: absolute;
+            top: 25%;
+            left: 2%;
+            background-color: white;
+            border: steelblue;
+            width: 20%;
+            padding: 10px;
+            }    
+
+        </style>
+    </head>
+    <body>
+
+        <div class="Lab-Test">
+            <img src="C:\Users\vicky\Desktop\Graded Assignment 1\Images fot HTML Assignment\Images\Lab-Test\lab-test.jpg" alt="Lab-Test">
+        </div>
+
+        <form action="Pharmacy.html">
+            <article class="Details">
+            <h3>Your Contact Details</h3>
+
+            <label for="F_name"></label>
+            <input type="text" name="F_name" placeholder="Enter First Name" required><br><br>
+
+            <label for="P_id"></label>
+            <input type="text" name="P_id" placeholder="Patient id if exists" ><br><br>
+
+            <label for="tel"></label>
+            <input type="number" name="tel" placeholder="Contact Number" min="6000000000" max="9999999999"  required><br><br>
+
+            <label for="email"></label>
+            <input type="text" name="email" placeholder="Email id" required><br><br>
+            </article>
+
+            <article>
+            <h3>Address</h3>
+            <input type="number" name="number" placeholder="Home Number"  required><br><br>
+
+            <input type="text" name="street" placeholder="Street"  required><br><br>
+
+            <input type="number" name="areanumber" placeholder="Area"  required><br><br>
+             </article>
+
+            <article>
+             <h3>District</h3>
+             <select name=" District" id="District" required>
+                <option value="">choose</option>
+                <option value="Bangalore Urban">Banglore Urban</option>
+                <option value="Bangalore rural">Banglore Rural</option>
+                <option value="Ramnagar">Ramnagar</option>
+                <option value="Vijaynagar">Vijaynagar</option><br><br>
+             </select>
+            </article>
+
+            <article>
+                <h3>Choose the Test type</h3>
+                <p>Check atleast one box without fail</p>
+
+                <input type="checkbox" id="c1" name="option1" value="CBC">
+                <label for="c1">CBC</label><br>
+
+                <input type="checkbox" id="c2" name="option2" value="Complete Urine">
+                <label for="c1">Complete Urine</label><br>
+
+                <input type="checkbox" id="c3" name="option3" value="Lipid Profile">
+                <label for="c1">Lipid Profile</label><br>
+
+                <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulting Hormone">
+                <label for="c1">Thyroid Stimulting Hormone(TSH)</label><br>
+
+                <input type="checkbox" id="c5" name="option5" value="Glucose Test">
+                <label for="c1">Glucose Test</label><br>
+            </article>
+                
+
+            <article>
+               <h3>Do you want hard copy of report also</h3>
+
+               <input type="radio" id="c6" name="option" value="true">
+                <label for="c6">Yes</label><br>
+                
+                <input type="radio" id="c7" name="option" value="false">
+                <label for="c7">No</label><br>
+            </article>
+
+            <article>
+                <h3>Select your comfortable Date and Time </h3>
+                <input type="date" id="c8" name="option6" value="Date">
+                <label for="c1">Date</label><br><br>
+                
+                <input type="time" id="c9" name="option7" value="Time">
+                <label for="c1">Time</label><br>
+            </article>
+
+            <br>
+            <button>Reset</button>
+            <button>Submit</button>
+            </form>
+    </body>
+</html>
