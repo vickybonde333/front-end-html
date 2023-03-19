@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Slot Booking Form</title>
+    <link rel="stylesheet" href="../Home/Pharmacy.css" type="text/css" />
+</head>
+
+<body>
+    <div class="container-1">
+        <div class="inner-form">
+            <div class="form-container">
+                <form action="../Home/Pharmacy.html" method="get" id="nameform">
+                    <br>
+                    <h3>1. Your Contact Details</h3>
+                    <div class="flex-container">
+                        <div class="flex-items">
+                            <label for="F_name"></label>
+                            <input type="text" name="F_name" placeholder="Full Name" required /><br /><br />
+                        </div>
+
+                        <div class="flex-items">
+                            <label for="P_id"></label>
+                            <input type="text" name="P_id" placeholder="Patient Id if exists" /><br /><br />
+                        </div>
+
+                        <div class="flex-items">
+                            <label for="email"></label>
+                            <input type="text" name="email" placeholder="Email id" required /><br /><br />
+                        </div>
+
+                        <div class="flex-items">
+                            <label for="tel"></label>
+                            <input type="number" name="tel" placeholder="Contact Number" min="6000000000"
+                                max="9999999999" required /><br /><br />
+                        </div>
+                    </div>
+
+                    <h3>2. Address</h3>
+                    <div class="flex-container">
+                        <div class="flex-items">
+                            <input type="text" name="H-No" placeholder="H-No" required /><br /><br />
+                        </div>
+
+                        <div class="flex-items">
+                            <input type="text" name="street" placeholder="Street" required /><br /><br />
+                        </div>
+
+                        <div class="flex-items">
+                            <input type="text" name="area" placeholder="Area" required /><br /><br />
+                        </div>
+                    </div>
+                    <div>
+                        <h4>District</h4>
+                        <select name=" District" id="District" required>
+                            <option value="">choose</option>
+                            <option value="Bangalore Urban">Banglore Urban</option>
+                            <option value="Bangalore rural">Banglore Rural</option>
+                            <option value="Ramnagar">Ramnagar</option>
+                            <option value="Vijaynagar">Vijaynagar</option>
+                            <br /><br />
+                        </select>
+                    </div>
+
+                    <div>
+                        <h3>3. Choose the Test type</h3>
+                        <p>Check atleast one box without fail</p>
+
+                        <input type="checkbox" id="c1" name="option1" value="CBC" />
+                        <label for="c1">CBC</label><br />
+
+                        <input type="checkbox" id="c2" name="option2" value="Complete Urine" />
+                        <label for="c2">Complete Urine</label><br />
+
+                        <input type="checkbox" id="c3" name="option3" value="Lipid Profile" />
+                        <label for="c3">Lipid Profile</label><br />
+
+                        <input type="checkbox" id="c4" name="option4" value="Thyroid Stimulting Hormone" />
+                        <label for="c4">Thyroid Stimulting Hormone(TSH)</label><br />
+
+                        <input type="checkbox" id="c5" name="option5" value="Glucose Test" />
+                        <label for="c5">Glucose Test</label><br />
+                    </div>
+
+                    <div>
+                        <h3>4. Do you want hard copy of report also?</h3>
+
+                        <input type="radio" id="c6" name="option" value="true" />
+                        <label for="c6">Yes</label><br />
+
+                        <input type="radio" id="c7" name="option" value="false" />
+                        <label for="c7">No</label><br />
+                    </div>
+
+                    <div>
+                        <h3>5. Select your comfortable Date and Time</h3>
+                        <input type="date" id="c8" name="option6" value="Date" />
+                        <label for="c8">Date</label><br /><br />
+
+                        <input type="time" id="c9" name="option7" value="Time" />
+                        <label for="c9">Time</label><br />
+                    </div>
+                </form>
+                <br>  
+            </div>
+
+        <div class="img-bg1" id="img">
+            <div class="img-bg">
+                <img src="../Images/LabTest/lab-test.jpg" class="img-sticky" />
+            </div>
+        </div>
+    </div>
+
+    <section>
+        <div class="flex-container mar-2-t align-center">
+            <div class="flex-button">
+                <button type="reset" form="nameform" value="Reset">Reset</button>
+            </div><br>
+
+            <div class="flex-button">
+                <button type="submit" form="nameform" value="Submit">Submit</button>
+            </div>
+        </div>
+    </section>
+    </div>
+</body>
+
+</html>
